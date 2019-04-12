@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{895FA543-C511-401B-AF8C-761230C77809}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>RPGDEMO</RootNamespace>
+    <AssemblyName>VW Creator</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <PublishUrl>发布\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.0.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>bet.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Forms\tyyAboutBox.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\tyyAboutBox.Designer.cs">
+      <DependentUpon>tyyAboutBox.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYYCoreLevel.cs" />
+    <Compile Include="TYYCoreMapCharger.cs" />
+    <Compile Include="Forms\tyyEscDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\tyyEscDlg.Designer.cs">
+      <DependentUpon>tyyEscDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TYYExtend.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\tyyIndex.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\tyyIndex.Designer.cs">
+      <DependentUpon>tyyIndex.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\tyyMainFrame.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\tyyMainFrame.Designer.cs">
+      <DependentUpon>tyyMainFrame.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="TYYCoreAnimation.cs" />
+    <Compile Include="TYYCoreData.cs" />
+    <Compile Include="TYYCoreProc.cs" />
+    <Compile Include="TYYCoreGUI.cs" />
+    <Compile Include="Forms\tyyRPGDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\tyyRPGDlg.Designer.cs">
+      <DependentUpon>tyyRPGDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\tyySettingDlg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\tyySettingDlg.Designer.cs">
+      <DependentUpon>tyySettingDlg.cs</DependentUpon>
+    </Compile>
+    <Compile Include="TYYSpecialSymbol.cs" />
+    <EmbeddedResource Include="Forms\tyyAboutBox.resx">
+      <DependentUpon>tyyAboutBox.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\tyyEscDlg.resx">
+      <DependentUpon>tyyEscDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\tyyIndex.resx">
+      <DependentUpon>tyyIndex.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\tyyMainFrame.resx">
+      <DependentUpon>tyyMainFrame.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <EmbeddedResource Include="Forms\tyyRPGDlg.resx">
+      <DependentUpon>tyyRPGDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\tyySettingDlg.resx">
+      <DependentUpon>tyySettingDlg.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="app.config" />
+    <None Include="Properties\app.manifest" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DataSource\Character\Towards\source2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DataSource\Character\Towards\toward_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DataSource\Character\Towards\toward_walk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DataSource\Character\Towards\toward_walk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DataSource\Character\Towards\back_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DataSource\Character\Towards\back_walk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DataSource\Character\Towards\back_walk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DataSource\Character\Towards\left_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DataSource\Character\Towards\left_walk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DataSource\Character\Towards\left_walk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DataSource\Character\Towards\right_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DataSource\Character\Towards\right_walk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DataSource\Character\Towards\right_walk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\DataSource\Character\Towards\map1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\data\special\special_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\data\maps\demo\map2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\data\maps\demo\map1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\back_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\back_walk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\back_walk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\left_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\left_walk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\left_walk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\right_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\right_walk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\right_walk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\toward_stop.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\toward_walk1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\toward_walk2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\mat\special_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\gui\chc.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\mat\tre_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\maps\map_g\grs.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat_1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat_2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat_3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat_4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat_5.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat_6.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat_7.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat_8.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat\wat_1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat\wat_2.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat\wat_3.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat\wat_4.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat\wat_5.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat\wat_6.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat\wat_7.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\dat\src\wat\wat_8.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="bet.ico" />
+    <None Include="bin\Debug\dat\src\dlg_bg.png" />
+    <None Include="bin\Debug\dat\src\ao_h.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
