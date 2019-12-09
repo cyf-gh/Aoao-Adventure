@@ -10,7 +10,7 @@
 
 感谢所有支持过这个小游戏的朋友。
 
-[【敖厂长历险记】发布帖贴吧链接](https://www.baidu.com/link?url=-j9QtXycns_Dp_B1NMzaIORE3aZPIwnAoy4Arihbq_ywKQ8FN1aG6tPyB5tItlwP&wd=&eqid=f3904b080006c207000000035cb573bd)
+[【敖厂长历险记】发布帖贴吧链接](http://tieba.baidu.com/p/3234205536?share=9105&fr=share&see_lz=0&sfc=copy&client_type=2&client_version=10.3.8.41&st=1575911848&unique=8B3B2D788DC75B1C5B453D80F39B8D36)
 
 ### 相关视频
 [【敖厂长历险记】初体验娱乐实况 - 作者：幽嘿嘿](https://www.bilibili.com/video/av1430443/)
